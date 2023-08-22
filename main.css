@@ -58,19 +58,17 @@ ul {
   text-decoration: none;
   font-size: 23px;
   font-weight: 600;
-  background: linear-gradient(to right,
-  lightskyblue 20%,
-      #53b1cd 30%,
-      #3b01cd 70%,
-      #4a62da 80%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
-  background-size: 500% auto;
+  -webkit-text-fill-color: transparent;
+	background-image: -webkit-linear-gradient(92deg, lightskyblue, #4a62da);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 #interchat:hover {
-  animation: textShine 3s ease-in-out infinite alternate-reverse;
+  /* animation: textShine 3s ease-in-out infinite alternate-reverse; */
+  animation: hue 6s ease-in-out infinite;
 }
 
 @keyframes textShine {
@@ -79,5 +77,14 @@ ul {
   }
   100% {
       background-position: 100% 50%;
+  }
+}
+
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(-360deg);
   }
 }
