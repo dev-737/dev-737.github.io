@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(assets/bg.png) no-repeat; /* center center fixed */
+  background-size: cover;
+}
+.box {
+  width: 450px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  border-radius: 25px;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+  font-family: "Century Gothic", sans-serif;
+}
+.box-img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.box h1 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.box h5 {
+  font-size: 25px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+.box p {
+  text-align: justify;
+  letter-spacing: 3px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.box li {
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.box li a {
+  color: white;
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+.box li a:hover {
+  color: #b9b9b9;
+}
+
+#interchat {
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: 600;
+  background: linear-gradient(to right,
+  lightskyblue 20%,
+      #53b1cd 30%,
+      #3b01cd 70%,
+      #4a62da 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 500% auto;
+}
+
+#interchat:hover {
+  animation: textShine 3s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes textShine {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
