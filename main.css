@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Titillium+Web&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -14,7 +16,8 @@ body {
   margin-top: 5%;
   color: white;
   backdrop-filter: blur(6px);
-  font-family: "Century Gothic", sans-serif;
+  /* font-family: "Century Gothic", sans-serif; */
+  font-family: "DotGothic16", sans-serif;
 }
 .box-img {
   border-radius: 50%;
@@ -25,15 +28,16 @@ body {
   font-size: 40px;
   letter-spacing: 4px;
   font-weight: 100;
+  margin-bottom: 10px;
 }
 .box h5 {
   font-size: 25px;
   letter-spacing: 3px;
   font-weight: 100;
+  margin-top: 10px;
 }
 .box p {
-  text-align: justify;
-  letter-spacing: 3px;
+  text-align: center;
 }
 ul {
   margin: 0;
